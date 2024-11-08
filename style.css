@@ -1,0 +1,93 @@
+/* General Body Styling */
+body {
+    background: linear-gradient(135deg, #f9f9f9, #f7e1d7);
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+/* Greeting Section */
+#greeting {
+    text-align: center;
+    margin-bottom: 40px;
+    animation: fadeIn 2s ease-out;
+}
+
+.text-peach {
+    color: #ff8f66;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+p.lead {
+    font-size: 1.25rem;
+    color: #ff7f50;
+    font-weight: 600;
+}
+
+/* Firework Animation */
+#fireworks {
+    width: 100%;
+    height: 250px;
+    margin-top: 30px;
+    background: url('fireworks.png') no-repeat center center;
+    background-size: cover;
+    animation: fireworks 1.5s ease-in-out infinite;
+}
+
+/* Video Slider Container */
+.slider-container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+}
+
+.video-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.slider-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Ensures video covers the entire container */
+}
+
+/* Blog Section */
+.blog-section {
+    background-color: #ff8f66;
+    color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .slider-container {
+        height: 300px;
+    }
+
+    .slider-video {
+        object-fit: contain;  /* Adjust for smaller screens */
+    }
+}
